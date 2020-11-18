@@ -111,3 +111,14 @@ db.close();
 
 ### client for api calling
 > restify-clients
+
+### Combo
+Configuration
+- xài yaml file  + biến environment, process.env.xxx
+- mà load từ file = fs-extra
+- parse ra object = js-yaml
+
+ghi log:
+- gán từng file prefix + bật tắt log: debug
+- log nài ghi xuống file : morgan
+- mà muốn rotate log file theo ngày + xóa bớt: rotating-file-stream
