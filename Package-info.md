@@ -122,3 +122,31 @@ ghi log:
 - gán từng file prefix + bật tắt log: debug
 - log nài ghi xuống file : morgan
 - mà muốn rotate log file theo ngày + xóa bớt: rotating-file-stream
+
+# Progress
+11-10: 320
+44%
+
+11/11 353
+
+12/11
+10h43 19
+
+13/11
+10h12: 117
+5h32: 170
+
+16/11
+262(278) = 37% 11h
+
+17/11 
+38% 271 
+10h53: 288
+3h15: 312
+5h43: 322
+
+18/11
+11h:50 329 48%
+
+3h42: 349
+5h50: 367
