@@ -150,3 +150,23 @@ ghi log:
 
 3h42: 349
 5h50: 367
+
+19/11
+10h15: 54% 367
+10h29 -> 11h02
+11h55: 56% 388
+1h40: same
+3h11: 394
+5h28: 401
+# Backlogs
+- Permission per user.
+- jwt token handling. (now only session + cookies)
+- handle an identity server case (is it similar to twitter flow?)
+- socket io authentication
+
+# socket io
+passport = middleware of app
+app = express
+http server = wrap around app
+socket io = wrap around httpserver
+    + socket io.use(passportSocketIo.Authorize ) => config same sessionCookieName, session secret, session store
