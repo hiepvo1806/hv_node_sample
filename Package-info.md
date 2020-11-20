@@ -158,6 +158,12 @@ ghi log:
 1h40: same
 3h11: 394
 5h28: 401
+
+20/11 (max 692)
+3h45: 59% 405
+5h26: 61% 419
+5h59: 62% 429
+6h04: 62% 431
 # Backlogs
 - Permission per user.
 - jwt token handling. (now only session + cookies)
