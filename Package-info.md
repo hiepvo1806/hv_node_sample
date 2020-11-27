@@ -164,6 +164,92 @@ ghi log:
 5h26: 61% 419
 5h59: 62% 429
 6h04: 62% 431
+
+23/11
+11h04: 69% 469
+
+24/11
+10h46: 72%
+
+25/11
+9h57: 74% ~512
+ aws configure --profile root-user
+11:23: 76% 526
+5:58: 79% 550
+
+26/11
+9h20: 79% 550
+11h51: 82% 573
+
+```
+> teraform init
+main.tf > 
+```
+provider "aws" {
+    profile   = "notes-app"
+    region    = var.aws_region
+}
+terraform {
+  backend "local" {
+    path = "../state/vpc/terraform.tfstate"
+  }
+}
+
+
+```
+teraform plan
+teraform apply
+
+```
+DOCKER SWAMPS
+
+```
+
+
+docker info
+docker node ls
+docker swarm init
+docker swarm join
+docker service
+docker service create --name nginx --replicas 1 -p 80:80 nginx
+docker service ps
+docker service update --replicas 3 nginx
+docker ps = docker container ls
+
+ssh add *.pem
+ssh url/ip2
+
+export DOCKER_HOST=ssh://url
+docker service ls
+unset DOCKER_HOST
+
+docker tag
+docker push 
+
+sh -x build.sh //https://www.cyberciti.biz/faq/run-execute-sh-shell-script/ same as bash
+
+docke stack = docker-compose
+docker stack deploy
+
+
+```
+
+
+bridge (single node) replaced by overlay (swarm mode) //overlay auto have load balancer by using container name dns as docker-compose
+
+
+
+DOCKER COntext
+
+```
+docker context create ec2 --docker host=ssh://url
+docker --context ec2 service ls
+docker context use ec2
+docker service ls
+```
+
+
+
 # Backlogs
 - Permission per user.
 - jwt token handling. (now only session + cookies)
